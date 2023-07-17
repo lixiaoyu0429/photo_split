@@ -234,6 +234,6 @@ def Iscoincide(original_data, new_data):
 
 if __name__ == "__main__":
 
-    # Image_Split(r'D:\learn\photo_split\photo', r"D:\learn\photo_split\xmls", True, 3, 3, 0, ".jpg")
-    Images_Merge(r'D:\learn\photo_split\Split_Result\230717_112005\photo_split', r'D:\learn\photo_split\Split_Result\230717_112005\xml_split', r'D:\learn\photo_split\photo', True, 9, 7, 0, ".jpg")
+    Image_Split(r'D:\learn\photo_split\photo', r"D:\learn\photo_split\xmls", True, 3, 3, 0, ".jpg")
+    # Images_Merge(r'D:\learn\photo_split\Split_Result\230717_112005\photo_split', r'D:\learn\photo_split\Split_Result\230717_112005\xml_split', r'D:\learn\photo_split\photo', True, 9, 7, 0, ".jpg")
 
