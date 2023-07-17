@@ -45,4 +45,4 @@ def merge_images(folder1, folder2):
     print("图片合并完成！")
 
 if __name__ == '__main__':
-    merge_images(r"D:\learn\photo_split\230717_093029\merged\photo_merged", r"D:\learn\photo_split\XmlDrawRect\230717_094444")
+    merge_images(r"D:\learn\photo_split\230717_105739\merged\photo_merged", r"D:\learn\photo_split\XmlDrawRect\230717_110044")

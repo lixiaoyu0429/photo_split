@@ -19,7 +19,7 @@ def Image_Split(folder_path, xmlmain_path, Have_Labels, n, m, overlap, types):
     folde_path = os.path.abspath(os.path.join(os.getcwd()))
     now = datetime.now()
     time_string = now.strftime("%Y%m%d_%H%M%S")
-    save_path = folde_path + '\\' + time_string[2:]
+    save_path = folde_path + '\\' + 'Split_Result' + '\\' + time_string[2:]
     os.makedirs(os.path.join(save_path, 'photo_split'))
     if Have_Labels == True:
         os.makedirs(os.path.join(save_path, 'xml_split'))
@@ -118,6 +118,7 @@ def Images_Merge(SplitToMerge_Img_Path, SplitToMerge_Xml_Path, Pri_photo_path, H
     # 每一组为一个原图片，遍历每一组
 
     save_path = os.path.join(folder_path, 'merged')
+    print(save_path)
     saveImg_path = os.path.join(save_path, 'photo_merged')
     if not os.path.exists(saveImg_path):
         os.makedirs(saveImg_path)
@@ -233,6 +234,6 @@ def Iscoincide(original_data, new_data):
 
 if __name__ == "__main__":
 
-    Image_Split(r'D:\learn\photo_split\photo', r"D:\learn\photo_split\xmls", True, 3, 3, 0, ".jpg")
-    # Images_Merge(r'D:\learn\photo_split\230717_101309\photo_split', r'D:\learn\photo_split\230717_101309\xml_split', r'D:\learn\photo_split\photo', True, 9, 7, 0, ".jpg")
+    # Image_Split(r'D:\learn\photo_split\photo', r"D:\learn\photo_split\xmls", True, 3, 3, 0, ".jpg")
+    Images_Merge(r'D:\learn\photo_split\Split_Result\230717_112005\photo_split', r'D:\learn\photo_split\Split_Result\230717_112005\xml_split', r'D:\learn\photo_split\photo', True, 9, 7, 0, ".jpg")
 

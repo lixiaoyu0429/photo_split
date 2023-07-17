@@ -218,5 +218,5 @@ def api(method, src_dir, Have_Labels, level, vertical, overlap):
 
 
 if __name__ == "__main__":
-    api(Image_with_Labels_Split, 'D:\learn\photo_split\photo', True, 9, 7, 10)
+    api(Image_with_Labels_Split, 'D:\learn\photo_split\photo', False, 9, 7, 10)
     # api(Images_without_Labels_Merge, '230705_170617', True, 3, 3, 10)
